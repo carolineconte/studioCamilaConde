@@ -11,7 +11,7 @@ import Card from "../Card";
 
 function Carrossel() {
   return (
-    <section className="mx-auto w-[90%] mt-3 mb-12 relative md:-mt-24 md:w-[100%] lg:w-[75%] lg:-mt-40">
+    <section className="mx-auto mt-3 mb-16 relative md:-mt-24 md:w-[100%] lg:w-[75%] lg:-mt-40">
       <Carousel>
         <CarouselContent>
           <CarouselItem className=" md:basis-1/3 lg:basis-1/3">
@@ -30,8 +30,8 @@ function Carrossel() {
           </CarouselItem>
         </CarouselContent>
 
-        <CarouselPrevious className="absolute top-[23vh] left-[40%] md:hidden" />
-        <CarouselNext className="right-[40%] top-[23vh] absolute md:hidden" />
+        <CarouselPrevious className="absolute top-[28vh] left-[40%] md:hidden" />
+        <CarouselNext className="right-[40%] top-[28vh] absolute md:hidden" />
       </Carousel>
     </section>
   )
