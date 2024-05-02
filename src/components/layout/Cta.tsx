@@ -8,7 +8,7 @@ interface Props {
 function Cta({ title, text }: Props) {
   return (
     <section className="bg-primaryBlack text-primaryWhite flex text-center lg:w-[80%] mx-auto">
-      <Image width={500} height={500} src={'/imgCta.jpg'} alt=""
+      <Image width={500} height={500} src={'/imgCta.jpg'} alt="" priority={false}
         className="hidden md:block w-[60%]"
       />
       <div className="flex flex-col gap-5 justify-between p-5 md:py-12 lg:p-16">

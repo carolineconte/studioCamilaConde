@@ -14,7 +14,7 @@ function Card({ imageUrl, alt, titleCard, textBody }: Card) {
 
       <Image className="max-[376px]:hidden border-2 border-primaryBlack rounded w-[40%] object-cover object-center
       md:w-[90%] md:h-[30vh] lg:h-[45vh] lg:object-top"
-        src={imageUrl} width={100} height={100} alt={alt}
+        src={imageUrl} width={90} height={90} alt={alt} priority={true}  loading="eager"
       />
 
       <div className="max-[376px]:justify-between max-[376px]:pt-0 flex flex-col gap-2 justify-around pt-3 md:grow md:pt-1">

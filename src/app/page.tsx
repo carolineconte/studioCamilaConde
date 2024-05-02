@@ -6,7 +6,7 @@ import About from "@/components/layout/About";
 import Carrossel from "@/components/layout/Carrossel";
 import Hero from "@/components/layout/Hero";
 import Review from "@/components/layout/Review";
-import Logo from "./efeito/page";
+import Logo from "@/components/layout/Logo";
 
 export default function Home() {
 
