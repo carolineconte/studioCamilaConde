@@ -31,11 +31,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en" className="bg-primaryWhite">
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable) }>
         {/* <WhatsBtn /> */}
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>

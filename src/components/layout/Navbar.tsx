@@ -26,7 +26,7 @@ function Navbar() {
       {/* Header mobile */}
       <header className="md:hidden z-40 fixed bg-primaryBlack w-full px-6">
         <div className="flex justify-between items-center py-2">
-          <Image className="w-15" src='/logo.svg' width={50} height={50} alt="logo studio" />
+          <Image className="w-16" src='/logo.svg' width={50} height={50} alt="logo studio" />
           <button className="text-white text-lg"
             onClick={() => setMobileNavOpen(!mobileNavOpen)}><MenuIcon className={'w-6 h-6 text-white '} />
           </button>
