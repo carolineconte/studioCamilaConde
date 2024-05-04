@@ -20,9 +20,11 @@
 .description {
   @apply flex w-full max-w-[980px] mx-auto border-2 border-rose rounded-lg
 }
-
+.description p {
+  @apply grow my-auto text-center p-1 font-light;
+}
 .description span {
-  @apply bg-rose w-[10%] p-3 shadow-xl  rounded-r-lg
+  @apply bg-rose p-3 shadow-xl rounded-r-lg items-center flex text-white;
 }
 
 .labelFooter {
@@ -66,11 +68,11 @@ main {
 }
 
 .pacotes {
-  @apply py-3 h-[450px] md:py-6 flex flex-col justify-center lg:py-12;
+  @apply py-3 md:h-[450px] md:py-6 flex flex-col justify-between lg:py-12;
 }
 
 .pacotes p {
-  @apply flex gap-2 items-center justify-start text-2xl p-1 lg:text-xl;
+  @apply flex gap-2 items-center justify-start text-2xl p-1 text-[1.1em];
 }
 
 .pacotes p:first-child {
@@ -78,7 +80,7 @@ main {
 }
 
 .pacotes p:last-child {
-  @apply text-2xl text-center w-full block bg-rose rounded-3xl text-primaryWhite my-4 shadow-sm p-2 lg:mt-auto;
+  @apply text-2xl mt-5 text-center w-full block bg-rose rounded-3xl text-primaryWhite my-4 shadow-sm p-2 md:mt-auto;
 }
 
 .active {
@@ -94,4 +96,8 @@ main {
   height: 3px;
   /* Altura da borda */
   background-image: linear-gradient(196deg, rgba(154, 102, 98, 1) 0%, rgba(244, 194, 188, 1) 28%, rgb(198, 151, 147) 58%, rgba(211, 162, 156, 1) 79%);
+}
+
+.aboutText span{
+  @apply font-semibold;
 }

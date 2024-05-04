@@ -37,7 +37,7 @@ function Navbar() {
 
           <ul className="text-primaryWhite flex flex-col bg-black text-center">
             <Link className="navLinkMobile"  href="/">Home</Link>
-            <Link className="navLinkMobile" href={'#'}>Serviços</Link>
+            <Link className="navLinkMobile" href={'/servicos'}>Serviços</Link>
             <Link className="navLinkMobile" href='/makefoto'>Make + Foto</Link>
             <Link className="navLinkMobile" href='/cursos'>Cursos</Link>
           </ul>

@@ -1,44 +1,38 @@
 'use client'
+import dynamic from 'next/dynamic'
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-import About from "@/components/layout/About";
+const About = dynamic(() => import("@/components/layout/About"))
+const Review = dynamic(() => import("@/components/layout/Review"))
+// import About from "@/components/layout/About";
 import Carrossel from "@/components/layout/Carrossel";
 import Hero from "@/components/layout/Hero";
-import Review from "@/components/layout/Review";
+// import Review from "@/components/layout/Review";
 import Logo from "@/components/layout/Logo";
 
 export default function Home() {
 
-  const [isLoaded, setIsLoaded] = useState(false);
-  
-  const handleLogoAnimationComplete = () => {
-    setIsLoaded(true); // Define isLoaded como true quando a animação da logo estiver completa
-  };
+  const [isVisible, setIsVisible] = useState(true);
 
-  const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
-  const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
-
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsVisible(false);
+    }, 3000);
+    
+  }, [setIsVisible]);
 
   return (
     <>
-       <Logo onLoad={handleLogoAnimationComplete} />
-       {isLoaded && (
-        <motion.div
-          initial={false}
-          animate={{ WebkitMaskImage: visibleMask, maskImage: visibleMask }}
-          transition={{ duration: 1, delay: 1 }}
-          viewport={{ once: true }}
-        >
+      {isVisible && <Logo isVisible={isVisible} setIsVisible={setIsVisible} />}
+
       <Hero />
       <main className="">
         <Carrossel />
         <About />
         <Review />
       </main>
-      </motion.div>
-      )}
-    </>
 
+    </>
   );
 }
