@@ -51,11 +51,9 @@ function CardCursos({ title, duration, price, description, includes, require, ce
               {includes.map(item => <li key={item}>{item}</li>)}
             </ul>
           </div>
-
           <Image src='/1.jpg' width={100} height={100} quality={95} loading="lazy" alt=""
             className="rounded max-w-[100%] object-cover grow hidden shadow-2xl md:block" />
         </div>
-
       </section>
 
     </motion.div>
