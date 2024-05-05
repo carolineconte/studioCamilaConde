@@ -16,7 +16,6 @@ interface Props {
 
 export default function Gallery({ img1, text1, img2, text2, img3, text3, img4, text4, img5, img6, text5 }: Props) {
   return (
-
     <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-24">
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">

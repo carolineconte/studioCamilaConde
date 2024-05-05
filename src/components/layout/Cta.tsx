@@ -12,7 +12,8 @@ function Cta({ title, text }: Props) {
         className="hidden md:block w-[60%]"
       />
       <div className="flex flex-col gap-5 justify-between p-5 md:py-12 lg:p-16">
-        <h2 className="font-['Abhaya_Libre'] text-2xl font-semibold lg:text-3xl">{title}</h2>
+     
+        <h2 className="font-['Abhaya_Libre'] text-rose drop-shadow-lg	leading-6 text-2xl font-semibold lg:text-3xl">{title}</h2>
         <p className="p-1 font-light text-sm md:text-lg">{text}</p>
 
         <div className="relative my-3 px-4 py-3 max-w-[400px] w-full mx-auto rounded-full hover:bg-primaryWhite hover:text-primaryBlack  cursor-pointer border-2 border-primaryWhite bg-primaryBlack text-primaryWhite">

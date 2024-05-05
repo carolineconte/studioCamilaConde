@@ -16,7 +16,8 @@ const config = {
         'primaryBlack': '#151415',
         'primaryWhite': '#eeede9',
         'secundaryWhite': '#f1e9e9',
-        'rose': '#b48d8c'
+        'rose': '#b48d8c',
+        'grad':'linear-gradient(196deg, rgba(154, 102, 98, 1) 0%, rgba(244, 194, 188, 1) 28%, rgb(198, 151, 147) 58%, rgba(211, 162, 156, 1) 79%);',
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],

@@ -12,6 +12,40 @@ import { FaHeart, FaPlay } from "react-icons/fa";
 
 export default function MakeFoto() {
 
+  const galleryContent = [
+    {
+      img: '/7.jpg',
+      alt: '',
+      sub: '',
+      link: '',
+    }, {
+      img: '/1.jpg',
+      alt: '',
+      sub: '',
+      link: '',
+    }, {
+      img: '/4.jpg',
+      alt: '',
+      sub: '',
+      link: '',
+    }, {
+      img: '/6.jpg',
+      alt: '',
+      sub: '',
+      link: '',
+    }, {
+      img: '/3.jpg',
+      alt: '',
+      sub: '',
+      link: '',
+    }, {
+      img: '/7.jpg',
+      alt: '',
+      sub: '',
+      link: '',
+    },
+  ]
+
   return (
     <main className="pt-20 lg:pt-28 lg:px-24">
 
@@ -65,7 +99,7 @@ export default function MakeFoto() {
           </div>
 
           <div className="max-md:h-[2px] md:w-[2px] md:my-12 bg-primaryBlack/50"></div>
-          
+
           <div className="pacotes">
             <p>Intermediário</p>
             <p><MakeupIcon />Maquiagem completa.</p>
