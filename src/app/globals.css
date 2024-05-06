@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 
 .navLink {
-  @apply py-3 border border-primaryWhite/50 transition-all hover:border-primaryWhite md:py-0 hover:bg-primaryBlack md:border-transparent md:border-t-0 md:border-x-0 md:border-b-2 md:text-lg md:hover:border-b-rose md:hover:bg-transparent;
+  @apply py-3 border w-full block border-primaryWhite/50 transition-all hover:border-primaryWhite md:py-0 hover:bg-primaryBlack md:border-transparent md:border-t-0 md:border-x-0 md:border-b-2 md:text-lg md:hover:border-b-rose md:hover:bg-transparent;
 }
 
 .subtitlePage {
