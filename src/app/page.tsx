@@ -13,8 +13,18 @@ import Contact from '@/components/layout/Contact';
 
 export default function Home() {
 
-  const initialState = localStorage.getItem('isVisible') === 'true';
-  const [isVisible, setIsVisible] = useState(initialState);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Verifica se está no lado do cliente antes de acessar o localStorage
+  useEffect(() => {
+    const initialState = typeof window !== 'undefined' && localStorage.getItem('isVisible') === 'true';
+    setIsVisible(initialState);
+  }, []);
+
+  // Salva o estado isVisible no localStorage sempre que ele mudar
+  useEffect(() => {
+    localStorage.setItem('isVisible', isVisible.toString()); // Convertendo para string
+  }, [isVisible]);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -23,11 +33,6 @@ export default function Home() {
 
     return () => clearTimeout(timeout);
   }, []);
-
-  // Salva o estado isVisible no localStorage sempre que ele mudar
-  useEffect(() => {
-    localStorage.setItem('isVisible', isVisible.toString()); // Convertendo para string
-  }, [isVisible]);
 
 
   return (
