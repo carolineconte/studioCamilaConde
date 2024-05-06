@@ -13,18 +13,7 @@ import Contact from '@/components/layout/Contact';
 
 export default function Home() {
 
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Verifica se está no lado do cliente antes de acessar o localStorage
-  useEffect(() => {
-    const initialState = typeof window !== 'undefined' && localStorage.getItem('isVisible') === 'true';
-    setIsVisible(initialState);
-  }, []);
-
-  // Salva o estado isVisible no localStorage sempre que ele mudar
-  useEffect(() => {
-    localStorage.setItem('isVisible', isVisible.toString()); // Convertendo para string
-  }, [isVisible]);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
