@@ -2,7 +2,7 @@
 import CardCursos from "@/components/CardCursos";
 import SectionTitle from "@/components/SectionTitle";
 import Cta from "@/components/layout/Cta";
-import Gallery from "@/components/layout/Gallery.tsx";
+import Gallery from "@/components/layout/Gallery";
 
 export default function Cursos() {
   const cursos = [

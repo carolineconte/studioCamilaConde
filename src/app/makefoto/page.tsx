@@ -6,7 +6,7 @@ import DressIcon from "@/components/icons/DressIcon";
 import PhotoIcon from "@/components/icons/PhotoIcon";
 import HairIcon from "@/components/icons/HairIcon";
 import VideoIcon from "@/components/icons/VideoIcon";
-import Gallery from "@/components/layout/Gallery.tsx";
+import Gallery from "@/components/layout/Gallery";
 import { PiStarFill } from "react-icons/pi";
 import { FaHeart, FaPlay } from "react-icons/fa";
 
