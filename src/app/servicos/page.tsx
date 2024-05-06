@@ -15,11 +15,6 @@ export default function Servicos() {
 
       <SectionTitle sectionTitle='Serviços' />
 
-      <p className="p-3 text-pretty text-center font-['Tenor_Sans'] text-lg leading-5 mx-auto
-      lg:text-xl lg:px-10">
-
-      </p>
-
       <ServicosGallery />
 
       <Cta

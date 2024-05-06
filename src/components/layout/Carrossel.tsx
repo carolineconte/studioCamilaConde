@@ -16,17 +16,20 @@ function Carrossel() {
         <CarouselContent>
           <CarouselItem className=" md:basis-1/3 lg:basis-1/3">
             <Card imageUrl={'/1.jpg'} alt={'Foto de uma modelo de maquiagem'} titleCard={'Beleza'} 
-            textBody={'Atendendimento personalizado com foco em realçar sua beleza natural.'} />
+            textBody={'Atendendimento personalizado com foco em realçar sua beleza natural.'} 
+            href='/servicos'/>
           </CarouselItem>
 
           <CarouselItem className="md:basis-1/3 lg:basis-1/3">
           <Card imageUrl={'/2.jpg'} alt={'Foto de uma Camila maquiando uma noiva'} titleCard={'Cursos'} 
-          textBody={'Aprenda a realçar sua beleza ou inicie na profissao de maquiador.'} />
+          textBody={'Aprenda a realçar sua beleza ou inicie na profissao de maquiador.'} 
+          href='/cursos'/>
           </CarouselItem>
 
           <CarouselItem className="md:basis-1/3 lg:basis-1/3">
           <Card imageUrl={'/5.jpg'} alt={'Foto cliente'} titleCard={'Make + Foto'} 
-          textBody={'Ensaio fotográfico sob medida para diversas finalidades.'} />
+          textBody={'Ensaio fotográfico sob medida para diversas finalidades.'} 
+          href='/makeefoto'/>
           </CarouselItem>
         </CarouselContent>
 

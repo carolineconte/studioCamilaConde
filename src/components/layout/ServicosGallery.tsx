@@ -78,22 +78,22 @@ function ServicosGallery() {
   const servicosNoiva = [
     {
       title: 'Noiva Básica',
-      servicos: ['Maquiagem blindada', 'Penteado', 'Auxílio para Vestir o Vestido de Noiva e Acessórios', 'Robe para usar no local'],
+      servicos: ['Maquiagem blindada', 'Penteado', 'Auxílio para Vestir', 'Robe para usar no local'],
       price: '50,00'
     },
     {
       title: 'Noiva Clássica',
-      servicos: ['Maquiagem blindada', 'Penteado', 'Design de sobrancelha', 'Auxílio para Vestir o Vestido de Noiva e Acessórios', 'Robe para usar no local'],
+      servicos: ['Maquiagem blindada', 'Penteado', 'Design de sobrancelha', 'Auxílio para Vestir', 'Robe para usar no local'],
       price: '60,00'
     },
     {
       title: 'Noiva Completa',
-      servicos: ['Maquiagem blindada', 'Penteado', 'Teste de maquiagem e penteado', 'Auxílio para Vestir o Vestido de Noiva e Acessórios', 'Robe para usar no local'],
+      servicos: ['Maquiagem blindada', 'Penteado', 'Teste de maquiagem e penteado', 'Auxílio para Vestir', 'Robe para usar no local'],
       price: '70,00'
     },
     {
       title: 'Noiva Premium',
-      servicos: ['Maquiagem blindada', 'Penteado', 'Teste de maquiagem e penteado', 'Design de sobrancelha', 'Auxílio para Vestir o Vestido de Noiva e Acessórios', 'Fotos no local'],
+      servicos: ['Maquiagem blindada', 'Penteado', 'Teste de maquiagem e penteado', 'Design de sobrancelha', 'Auxílio para Vestir', 'Fotos no local'],
       price: '80,00'
     }
   ];
@@ -104,19 +104,18 @@ function ServicosGallery() {
     <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-24">
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 h-full">
-
-        <CardServicos setExibir={setExibir} src={'/maquiagem.jpg'} setar={servicosNoiva} text={'Maquiagem & Penteados'} />
+        <CardServicos setExibir={setExibir} src={'/maquiagem.jpg'} setar={servicosMaquiagemPenteado} text={'Maquiagem & Penteados'} />
         <CardServicos setExibir={setExibir} src={'/cabelos.jpg'} setar={servicosCabelos} text={'Cabelos'} />
         <CardServicos setExibir={setExibir} src={'/noiva.jpg'} setar={servicosNoiva} text={'Noivas'} />
-
       </div>
 
-      <div className="w-full mt-12">
-        <SectionTitle sectionTitle='Valores' />
-        <div className="py-6 px-10 text-lg">
+      <div id="valores" className="w-full mt-12">
+        <SectionTitle sectionTitle="Valores" />
+        <h2 className="text-sm font-thin block text-center my-1">(Clique na imagem para ver os valores relacionados)</h2>
+        <div className="py-6 md:px-10 px-2 text-lg">
           {exibir.some(item => item.title === 'Noiva Básica') ? (
             // Se exibir contém pacotes de serviços de noiva
-            <div className="md:grid md:grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {
                 servicosNoiva.map((pacote, index) => (
                   <div key={pacote.title} className="border border-primaryBlack rounded-lg p-4 w-full flex flex-col">
@@ -126,7 +125,7 @@ function ServicosGallery() {
                         <li key={servico} className="flex items-center"><TiHeart className="text-rose" />{servico}</li>
                       ))}
                     </ul>
-                    <p className="w-1/3 rounded text-lg mx-auto px-4 py-1 mt-auto font-bold bg-primaryBlack text-primaryWhite text-center">R$ {pacote.price}</p>
+                    <p className="w-1/2 rounded text-lg mx-auto px-4 py-1 mt-auto font-bold bg-primaryBlack text-primaryWhite text-center">R$ {pacote.price}</p>
                   </div>
                 ))
               }
@@ -135,7 +134,7 @@ function ServicosGallery() {
             <table className="w-full">
               <thead className="border-b border-primaryBlack text-left">
                 <tr>
-                  <th>Serviço</th>
+                  <th>Serviços</th>
                   <th className="w-[25%] text-right">Valor (R$)</th>
                 </tr>
               </thead>
