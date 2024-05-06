@@ -5,6 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils"
 
 import WhatsBtn from "@/components/WhatsBtn"
+import InstaBtn from "@/components/InstaBtn"
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
@@ -23,7 +24,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Studio Camila Conde",
-  description: "especialista em maquiagem e fotografia, maquiagem embelezadora,pendeados, cursos de maquiagem",
+  description: "especialista em maquiagem e fotografia, maquiagem embelezadora, Penteado, cursos de maquiagem",
 };
 
 export default function RootLayout({
@@ -31,11 +32,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
+
   return (
     <html lang="en" className="bg-primaryWhite">
-      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable) }>
-        {/* <WhatsBtn /> */}
+      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+        <WhatsBtn />
+        <InstaBtn />
         <Navbar />
         {children}
         <Footer />

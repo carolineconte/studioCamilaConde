@@ -22,11 +22,11 @@ function Navbar() {
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
         <ul className="text-primaryWhite flex flex-col bg-black text-center md:flex-row md:justify-center md:items-center md:gap-12">
-          <li><Link className={`${pathname === '/' ? 'active' : 'navLink'} `} href="/">Home</Link></li>
-          <li><Link className={`${pathname.startsWith('/servicos') ? 'active' : 'navLink'}  mb:navLinkDesktop`} href={'/servicos'}>Serviços</Link></li>
+          <li><Link className={`${pathname === '/' ? 'active' : 'navLink'} navLink`} href="/">Home</Link></li>
+          <li><Link className={`${pathname.startsWith('/servicos') ? 'active' : 'navLink'} navLink`} href={'/servicos'}>Serviços</Link></li>
           <li><Image className="hidden md:block" src='/logo.svg' quality={95} width={90} height={50} alt="logo studio" ></Image></li>
-          <li><Link className={`${pathname.startsWith('/makefoto') ? 'active' : 'navLink'} `} href='/makefoto'>Make + Foto</Link></li>
-          <li><Link className={`${pathname.startsWith('/cursos') ? 'active' : 'navLink'} `} href={'/cursos'}>Cursos</Link></li>
+          <li><Link className={`${pathname.startsWith('/makefoto') ? 'active' : 'navLink'} navLink`} href='/makefoto'>Make + Foto</Link></li>
+          <li><Link className={`${pathname.startsWith('/cursos') ? 'active' : 'navLink'} navLink`} href={'/cursos'}>Cursos</Link></li>
         </ul>
       </nav>
     </header>

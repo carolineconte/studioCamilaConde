@@ -10,8 +10,8 @@
 </g>
 </g>
 <defs>
-<filter id="filter0_dddddddd_89_1058" x="0.435801" y="9.28546" width="279.774" height="33.7342" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_dddddddd_89_1058" x="0.435801" y="9.28546" width="279.774" height="33.7342" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="1.68627"/>
 <feGaussianBlur stdDeviation="0.843135"/>
@@ -71,8 +71,8 @@
 <pattern id="pattern2_89_1058" patternContentUnits="objectBoundingBox" width="2.04739" height="5.10552">
 <use xlink:href="#image2_89_1058" transform="matrix(0 0.00995229 -0.00399101 0 2.04739 0)"/>
 </pattern>
-<filter id="filter1_dddddd_89_1058" x="33.2581" y="48.8505" width="219.541" height="19.7723" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter1_dddddd_89_1058" x="33.2581" y="48.8505" width="219.541" height="19.7723" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="1.68627"/>
 <feGaussianBlur stdDeviation="0.843135"/>
@@ -111,8 +111,8 @@
 <feBlend mode="normal" in2="effect5_dropShadow_89_1058" result="effect6_dropShadow_89_1058"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow_89_1058" result="shape"/>
 </filter>
-<filter id="filter2_bd_89_1058" x="33.0875" y="46.9937" width="219.883" height="21.9701" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter2_bd_89_1058" x="33.0875" y="46.9937" width="219.883" height="21.9701" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImageFix" stdDeviation="0.9284"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_89_1058"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
