@@ -29,7 +29,7 @@ function Carrossel() {
           <CarouselItem className="md:basis-1/3 lg:basis-1/3">
           <Card imageUrl={'/5.jpg'} alt={'Foto cliente'} titleCard={'Make + Foto'} 
           textBody={'Ensaio fotográfico sob medida para diversas finalidades.'} 
-          href='/makeefoto'/>
+          href='/makefoto'/>
           </CarouselItem>
         </CarouselContent>
 

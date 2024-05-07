@@ -16,13 +16,23 @@ export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    // Check if the splash page has been displayed before
+    const isSplashDisplayed = localStorage.getItem('isSplashDisplayed');
+
+    if (isSplashDisplayed) {
+      // If splash has been displayed before, hide it immediately
       setIsVisible(false);
-    }, 3000);
+    } else {
+      // If splash has not been displayed before, show it and mark as displayed
+      const timeout = setTimeout(() => {
+        setIsVisible(false);
+        // Mark splash as displayed in local storage
+        localStorage.setItem('isSplashDisplayed', 'true');
+      }, 3000);
 
-    return () => clearTimeout(timeout);
+      return () => clearTimeout(timeout);
+    }
   }, []);
-
 
   return (
     <>

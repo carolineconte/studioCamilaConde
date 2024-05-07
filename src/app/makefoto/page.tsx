@@ -9,6 +9,8 @@ import VideoIcon from "@/components/icons/VideoIcon";
 import Gallery from "@/components/layout/Gallery";
 import { PiStarFill } from "react-icons/pi";
 import { FaHeart, FaPlay } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 
 export default function MakeFoto() {
 
@@ -87,49 +89,85 @@ export default function MakeFoto() {
         <h2 className="subtitlePage">Pacotes Disponiveis</h2>
 
         <div className="border-double px-10 border-4 border-primaryBlack mx-auto rounded justify-between  
-         md:flex md:py-6">
+          md:py-6 md:grid grid-cols-[1fr_15px_1fr_15px_1fr] gap-3">
 
           <div className="pacotes">
-            <p>Básico</p>
-            <p><MakeupIcon />Maquiagem completa.</p>
+            <p>Pack Glow</p>
+            <p><MakeupIcon />Maquiagem com cílios.</p>
             <p><ClockIcon />2 Horas de ensaio.</p>
             <p><DressIcon />2 Trocas de roupas.</p>
-            <p><PhotoIcon />15 Fotos.</p>
-            <p>R$ 500,00</p>
+            <p><PhotoIcon />20 fotos editadas (enviadas por drive)</p>
+            <p className="priceBadge">R$ 400,00</p>
+            <span className="infosPacotes">Entrada: R$150,00 no pix para reserva de hórario.</span>
+            <span className="infosPacotes">Restante no pix ou até 2x com acréscimo da máquina</span>
           </div>
 
           <div className="max-md:h-[2px] md:w-[2px] md:my-12 bg-primaryBlack/50"></div>
 
           <div className="pacotes">
-            <p>Intermediário</p>
-            <p><MakeupIcon />Maquiagem completa.</p>
-            <p><HairIcon />Cachos.</p>
+            <p>Pack Glow</p>
+            <p><MakeupIcon />Maquiagem com cílios.</p>
+            <p><ClockIcon />2:30 Horas de ensaio.</p>
+            <p><DressIcon />2 Trocas de roupas.</p>
+            <p><DressIcon />Assessoria para escolha dos looks</p>
+            <p><PhotoIcon />40 fotos editadas (enviadas por drive)</p>
+            <p><VideoIcon />Consultoria para redes sociais</p>
+            <p className="priceBadge">R$ 500,00</p>
+            <span className="infosPacotes">Entrada: R$150,00 no pix para reserva de hórario.</span>
+            <span className="infosPacotes">Restante no pix ou até 4x com acréscimo da máquina</span>
+          </div>
+
+          <div className="max-md:h-[2px] md:w-[2px] md:my-12 bg-primaryBlack/50"></div>
+
+          <div className="pacotes">
+            <p>Girl Boss</p>
+            <p><MakeupIcon />Maquiagem com cílios</p>
+            <p><HairIcon />Babyliss (sem lavagem,vir com cabelo limpo)</p>
             <p><ClockIcon />3 Horas de ensaio.</p>
             <p><DressIcon />3 Trocas de roupas.</p>
-            <p><PhotoIcon />25 Fotos.</p>
-            <p><VideoIcon />1 Video para redes sociais.</p>
-            <p>R$ 500,00</p>
+            <p><PhotoIcon />40 fotos editadas (enviadas por drive)</p>
+            <p><VideoIcon />Consultoria para redes sociais</p>
+            <p>Consultoria de Coloração pessoal com Estela Borges (agendamento direto com ela antes da sessão)</p>
+            <p className="priceBadge">R$ 650,00</p>
+            <span className="infosPacotes">Entrada: R$150,00 no pix para reserva de hórario.</span>
+            <span className="infosPacotes">Restante no pix ou até 6x com acréscimo da máquina</span>
           </div>
 
-          <div className="max-md:h-[2px] md:w-[2px] md:my-12 bg-primaryBlack/50"></div>
-
-          <div className="pacotes">
-            <p>Avançado</p>
-            <p><MakeupIcon />Maquiagem completa.</p>
-            <p><HairIcon />Cachos.</p>
-            <p><ClockIcon />3 Horas de ensaio.</p>
-            <p><DressIcon />4 Trocas de roupas.</p>
-            <p><PhotoIcon />40 Fotos.</p>
-            <p><VideoIcon />1 Video para redes sociais.</p>
-            <p>R$ 500,00</p>
+          <div className="col-span-full">
+            <h3 className="font-bold">ENTREGA</h3>
+            <ul className="list-disc">
+              <li>
+              As fotos são realizadas no meu espaço de trabalho, meu studio em meu
+              celular Iphone, com técnicas profissionais de fotografia, iluminação e edição.
+              </li>
+              <li>
+              Equipamentos e estrutura para um ensaio de alta qualidade. Após o ensaio a
+              cliente escolherá as fotos no studio mesmo (por favor deixe tempo reservado
+              para isso), e as fotos são entregues somente editadas.
+              </li>
+              <li>
+              As fotos editadas serão enviadas em até 7 dias úteis.
+              </li>
+            </ul>
           </div>
-
         </div>
       </section>
 
-
-      <div className="boder border-primaryBlack">
-
+      <div className="w-full mt-10 px-2 mb-12">
+        <p className="font-bold">Informações importantes</p>
+        <ul className="list-disc">
+          <li>Os ageendamentos são feitos com no mínimo 15 dias de antecedência por questões de agenda.</li>
+          <li>Esses ensaios são agendados apenas durante a semana.</li>
+          <li>
+            O não comparecimento no dia do ensaio não dá direito a reembolso,
+            valor de entrada ficará como multa pela falta.
+          </li>
+          <li>
+            Caso precise remarcar seu ensaio você terá prazo de 30 dias para
+            agendar outra data, caso não remarcar, precisará fazer outra entrada,
+            valor ficará como multa
+          </li>
+        </ul>
       </div>
 
       <Cta

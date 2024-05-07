@@ -1,11 +1,5 @@
 import SectionTitle from "@/components/SectionTitle";
 import Cta from "@/components/layout/Cta";
-import MakeupIcon from "@/components/icons/MakeupIcon"
-import ClockIcon from "@/components/icons/ClockIcon";
-import DressIcon from "@/components/icons/DressIcon";
-import PhotoIcon from "@/components/icons/PhotoIcon";
-import HairIcon from "@/components/icons/HairIcon";
-import VideoIcon from "@/components/icons/VideoIcon";
 import ServicosGallery from "@/components/layout/ServicosGallery";
 
 export default function Servicos() {

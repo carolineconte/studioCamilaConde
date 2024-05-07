@@ -75,7 +75,7 @@ main {
 }
 
 .pacotes {
-  @apply py-3 md:h-[450px] md:py-6 flex flex-col justify-between lg:py-12;
+  @apply py-3 md:py-6 flex flex-col justify-between;
 }
 
 .pacotes p {
@@ -86,8 +86,11 @@ main {
   @apply text-3xl text-center w-full block mb-6;
 }
 
-.pacotes p:last-child {
+.pacotes .priceBadge {
   @apply text-2xl mt-5 text-center w-full block bg-rose rounded-3xl text-primaryWhite my-4 shadow-sm p-2 md:mt-auto;
+}
+.pacotes .infosPacotes{
+  @apply text-[.8rem]
 }
 
 .active {

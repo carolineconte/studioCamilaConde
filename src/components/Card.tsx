@@ -11,7 +11,7 @@ interface Card {
 
 function Card({ imageUrl, alt, titleCard, textBody,href }: Card) {
   return (
-    <div className="flex h-[25vh] p-2 border-2 border-primaryBlack rounded gap-2 bg-primaryWhite/20
+    <div className=" max-[376px]:max-w-[300px] max-[376px]:h-[20vh] max-md:max-w-[70%] m-auto flex h-[25vh] p-2 border-2 border-primaryBlack rounded gap-2 bg-primaryWhite/20
     md:flex-col md:size-full md:items-center md:px-1">
 
       <Image className="max-[376px]:hidden border-2 border-primaryBlack rounded w-[40%] object-cover object-center
