@@ -88,7 +88,7 @@ main {
 }
 
 .pacotes .priceBadge {
-  @apply text-2xl mt-5 text-center w-full block bg-rose rounded-3xl text-primaryWhite my-4 shadow-sm p-2 md:mt-auto;
+  @apply text-2xl mt-5 text-center w-full block border-[5px] bg-white/70 font-bold border-[#693C3B] rounded-3xl text-[#693C3B] my-4 shadow-sm p-2 md:mt-auto;
 }
 
 .pacotes .infosPacotes {

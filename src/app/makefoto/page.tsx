@@ -1,19 +1,25 @@
-import SectionTitle from "@/components/SectionTitle";
-import Cta from "@/components/layout/Cta";
+import dynamic from 'next/dynamic'
+
+
 import MakeupIcon from "@/components/icons/MakeupIcon"
 import ClockIcon from "@/components/icons/ClockIcon";
 import DressIcon from "@/components/icons/DressIcon";
 import PhotoIcon from "@/components/icons/PhotoIcon";
 import HairIcon from "@/components/icons/HairIcon";
 import VideoIcon from "@/components/icons/VideoIcon";
-import Gallery from "@/components/layout/Gallery";
+
 import { PiStarFill } from "react-icons/pi";
 import { FaHeart, FaPlay } from "react-icons/fa";
 import { TbColorSwatch } from "react-icons/tb";
 
-import Infos from "@/components/Infos";
-
-
+const Infos = dynamic(() => import("@/components/Infos"))
+const Gallery = dynamic(() => import("@/components/layout/Gallery"))
+const SectionTitle = dynamic(() => import("@/components/SectionTitle"))
+const Cta = dynamic(() => import("@/components/layout/Cta"))
+// import Infos from "@/components/Infos";
+// import Gallery from "@/components/layout/Gallery";
+// import SectionTitle from "@/components/SectionTitle";
+// import Cta from "@/components/layout/Cta";
 
 export default function MakeFoto() {
 
