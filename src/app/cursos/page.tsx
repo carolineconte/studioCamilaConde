@@ -104,7 +104,7 @@ export default function Cursos() {
   ];
 
   return (
-    <main className="pt-20 lg:pt-28">
+    <main className="pt-20 md:pt-24 lg:pt-28">
 
       <SectionTitle sectionTitle='Cursos' />
 

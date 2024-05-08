@@ -155,7 +155,7 @@ function ServicosGallery() {
   return (
     <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 h-[40vh]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:h-[40vh]">
         <CardServicos setExibir={setExibir} src={'/13.png'} setar={servicosMaquiagemPenteado} text={'Maquiagem & Penteados'} />
         <CardServicos setExibir={setExibir} src={'/cabelos.jpg'} setar={servicosCabelos} text={'Cabelos'} />
         <CardServicos setExibir={setExibir} src={'/12.png'} setar={servicosNoiva} text={'Noivas'} />

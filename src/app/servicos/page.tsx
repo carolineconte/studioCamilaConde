@@ -6,7 +6,7 @@ import ServicosGallery from "@/components/layout/ServicosGallery";
 export default function Servicos() {
 
   return (
-    <main className="pt-20 lg:pt-28 lg:px-24">
+    <main className="pt-20 md:pt-24 lg:pt-28 lg:px-24">
 
       <SectionTitle sectionTitle='Serviços' />
 

@@ -38,15 +38,15 @@ function CardCursos({ title, duration, price, description, includes, require, ce
       opacity: opacityProgress
     }} className="mb-3 sm:mb-8 last:mb-0 group text-left flex items-center justify-center">
 
-      <section className="w-full px-2 py-5 md:py-10 md:px-10 md:mx-10 border-double border-4 border-rose shadow rounded  text-xl text-primaryBlack bg-rose/20">
+      <section className="w-full px-2 py-5 md:py-10 md:px-10  border-double border-4 border-rose shadow rounded  text-xl text-primaryBlack bg-rose/20">
 
         <h1 className="text-3xl text-center font-semibold">{title}</h1>
         <p className="font-light text-center md:px-10 mb-5">{description}</p>
 
         <div className="pt-2 w-full flex">
 
-          <div className="grow font-semibold">
-            <div className="md:grid grid-cols-2 w-[100%]">
+          <div className="grow">
+            <div className="lg:grid grid-cols-2 w-[100%]">
             <p className="flex items-center gap-2"><CiTimer /> <strong>Duração:</strong> {duration}</p>
             <p className="flex items-center gap-2"><CiMoneyBill /><strong>Valor:</strong> {price}</p>
             <p className="flex flex-wrap items-center gap-2"><PiGraduationCapThin /> <strong>Pré-requisitos:</strong>{require}</p>

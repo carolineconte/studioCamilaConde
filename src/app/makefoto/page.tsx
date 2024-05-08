@@ -26,7 +26,7 @@ export default function MakeFoto() {
   ];
 
   return (
-    <main className="pt-20 lg:pt-28 lg:px-24">
+    <main className="pt-20 md:pt-24 lg:pt-28 lg:px-24">
 
       <SectionTitle sectionTitle='Make & Foto' />
 
@@ -65,7 +65,7 @@ export default function MakeFoto() {
         <h2 className="subtitlePage">Pacotes Disponiveis</h2>
 
         <div className="border-double px-10 border-4 border-primaryBlack mx-auto rounded justify-between  
-          md:py-6 md:grid grid-cols-[1fr_15px_1fr_15px_1.2fr] gap-3">
+          md:py-6 lg:grid grid-cols-[1fr_15px_1fr_15px_1.2fr] gap-3">
 
           <div className="pacotes">
             <p>Pack Glow</p>
@@ -78,7 +78,7 @@ export default function MakeFoto() {
             <span className="infosPacotes">Restante no pix ou até 2x com acréscimo da máquina</span>
           </div>
 
-          <div className="max-md:h-[2px] md:w-[2px] bg-primaryBlack/50"></div>
+          <div className="max-lg:h-[2px] lg:w-[2px] bg-primaryBlack/50"></div>
 
           <div className="pacotes">
             <p>Pack Glow Up</p>
@@ -93,7 +93,7 @@ export default function MakeFoto() {
             <span className="infosPacotes">Restante no pix ou até 4x com acréscimo da máquina</span>
           </div>
 
-          <div className="max-md:h-[2px] md:w-[2px] bg-primaryBlack/50"></div>
+          <div className="max-lg:h-[2px] lg:w-[2px] bg-primaryBlack/50"></div>
 
           <div className="pacotes">
             <p>Girl Boss</p>

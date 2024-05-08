@@ -11,7 +11,7 @@ import Card from "../Card";
 
 function Carrossel() {
   return (
-    <section className="mx-auto mt-3 mb-16 relative md:-mt-24 md:w-[100%] lg:w-[75%] lg:-mt-40">
+    <section className="mx-auto mt-3 mb-16 relative md:-mt-24 md:w-[100%] xl:w-[75%] lg:-mt-40">
       <Carousel>
         <CarouselContent>
           <CarouselItem className=" md:basis-1/3 lg:basis-1/3">
