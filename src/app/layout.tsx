@@ -16,7 +16,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Studio Camila Conde",
-  description: "especialista em maquiagem e fotografia, maquiagem embelezadora, Penteado, cursos de maquiagem",
+  description: "Maquiadora profissional capacitada para atender maquiagens sociais e artísticas, como para eventos gerais diurnos e noturnos, casamentos (convidadas, madrinhas, noivas), debutantes e ensaios fotográficos., Penteado, cursos de maquiagem",
 };
 
 export default function RootLayout({

@@ -21,11 +21,18 @@ export default function About() {
 
           <p>
             <strong>Sou uma maquiadora, cabeleireira e fotógrafa. </strong>
-            Com um olhar atento aos detalhes, meu objetivo é revelar a verdadeira essência da beleza em cada cliente que tenho o privilégio de trabalhar.
+            Com um olhar atento aos detalhes, meu objetivo é revelar a verdadeira essência da beleza em cada 
+            cliente que tenho o privilégio de trabalhar.
           </p>
           <p>
             Minha jornada começou há mais de 10 anos, e meu maior objetivo sempre foi realçar a beleza natural das minhas clientes
             e capturar momentos preciosos e eternizá-los em imagens que contam histórias.
+          </p>
+          <p>
+            Capacitada para atender maquiagens sociais e artísticas, como para eventos gerais diurnos e noturnos, casamentos 
+            (convidadas, madrinhas, noivas), debutantes, ensaios fotográficos, etc. 
+            Procuro estar sempre me atualizando com as técnicas mais recentes utilizadas pelos maquiadores mais renomados do país. 
+            Utilizo dos produtos de maior excelência em qualidade, acabamento e duração. Ministro cursos de automaquiagem e profissional.
           </p>
           <p>
             <strong>
