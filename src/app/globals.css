@@ -50,10 +50,11 @@
   right: 5%;
 }
 
-.InstaBtn{
+.InstaBtn {
   bottom: 12%;
   right: 5%;
 }
+
 .InstaBtn:hover,
 .WhatsBtn:hover {
   transform: scale(1.2);
@@ -89,7 +90,8 @@ main {
 .pacotes .priceBadge {
   @apply text-2xl mt-5 text-center w-full block bg-rose rounded-3xl text-primaryWhite my-4 shadow-sm p-2 md:mt-auto;
 }
-.pacotes .infosPacotes{
+
+.pacotes .infosPacotes {
   @apply text-[.8rem]
 }
 
@@ -97,16 +99,19 @@ main {
   position: relative;
 }
 
-.active::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  /* Altura da borda */
-  background-image: linear-gradient(196deg, rgba(154, 102, 98, 1) 0%, rgba(244, 194, 188, 1) 28%, rgb(198, 151, 147) 58%, rgba(211, 162, 156, 1) 79%);
+@media (min-width: 768px) {
+  .active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(196deg, rgba(154, 102, 98, 1) 0%, rgba(244, 194, 188, 1) 28%, rgb(198, 151, 147) 58%, rgba(211, 162, 156, 1) 79%);
+  }
 }
+
+
 
 .aboutText span {
   @apply font-semibold;

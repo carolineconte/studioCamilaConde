@@ -1,5 +1,6 @@
 'use client'
 import CardCursos from "@/components/CardCursos";
+import Infos from "@/components/Infos";
 import SectionTitle from "@/components/SectionTitle";
 import Cta from "@/components/layout/Cta";
 
@@ -8,7 +9,7 @@ export default function Cursos() {
   const cursos = [
     {
       title: 'Curso de Automaquiagem',
-      img:'',
+      img: '/1.jpg',
       duration: '3 horas',
       promo: 'Em dupa R$ 250,00 cada.',
       price: 'R$ 350,00',
@@ -29,9 +30,10 @@ export default function Cursos() {
     },
     {
       title: 'Curso Profissional Iniciante',
+      img: '/14.png',
       duration: '24 horas (3 dias)',
       price: 'R$ 1300,00',
-      parcelamento:'12x 142,41',
+      parcelamento: '12x 142,41',
       description: 'Capacitar profissionais a se tornarem maquiadores qualificados e preparados para o mercado de trabalho.',
       includes: [
         'Maquiagem Beauty.',
@@ -53,10 +55,10 @@ export default function Cursos() {
     },
     {
       title: 'Curso de Aperfeiçoamento',
-      img:'',
+      img: '/13.png',
       duration: '8 horas(um dia)',
       price: 'R$ 700,00',
-      parcelamento:'12x 76,68',
+      parcelamento: '12x 76,68',
       description: 'Capacitar maquiadores a dominar técnicas específicas para criar looks deslumbrantes para noivas.',
       includes: [
         'Maquiagem social.',
@@ -72,10 +74,10 @@ export default function Cursos() {
 
     {
       title: 'Curso de Aperfeiçoamento 2',
-      img:'',
+      img: '/3.jpg',
       duration: '9 horas (Um dia)',
       price: 'R$ 800,00',
-      parcelamento:'12X 87,64',
+      parcelamento: '12X 87,64',
       description: 'Capacitar profissionais a realizar serviços de design de sobrancelhas com precisão e habilidade.',
       includes: [
         'Maquiagem Beauty.',
@@ -91,6 +93,13 @@ export default function Cursos() {
       require: 'Conhecimento de maquiagem.',
       certificate: 'Sim'
     }
+  ];
+
+  const infosList = [
+    'Entrada para agendar data do curso de 30%.',
+    'Será permitido alteração de data somente uma vez.',
+    'Caso queira cancelar a entrada não será devolvida.',
+    'Curso pode ser parcelado até 12x com juros da máquina.',
   ];
 
   return (
@@ -110,15 +119,7 @@ export default function Cursos() {
         }
       </section>
 
-      <div className="flex flex-col text-left items-center mx-auto mb-24 mt-10">
-                <p className="font-bold">Informações importantes</p>
-                <ul className="list-disc grid grid-cols-2">
-                  <li>Entrada para agendar data do curso de 30%.</li>
-                  <li>Será permitido alteração de data somente uma vez.</li>
-                  <li>Caso queira cancelar a entrada não será devolvida.</li>
-                  <li>Curso pode ser parcelado até 12x com juros da máquina.</li>
-                </ul>
-              </div>
+      <Infos infosList={infosList} />
 
       <Cta
         title='Explore seu potencial no mundo da maquiagem'

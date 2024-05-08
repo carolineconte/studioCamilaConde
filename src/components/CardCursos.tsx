@@ -9,7 +9,7 @@ import { FiAlertCircle } from "react-icons/fi";
 
 interface Props {
   title: string;
-  img?: string;
+  img: string;
   duration: string;
   price: string;
   description: string;
@@ -20,7 +20,7 @@ interface Props {
   promo?: string;
 }
 
-function CardCursos({ title, duration, price, description, includes, require, certificate, parcelamento, promo }: Props) {
+function CardCursos({ title, duration, price, description, includes, require, certificate, parcelamento, promo,img }: Props) {
 
   const ref = useRef<HTMLDivElement>(null)
 
@@ -49,7 +49,7 @@ function CardCursos({ title, duration, price, description, includes, require, ce
             <div className="md:grid grid-cols-2 w-[100%]">
             <p className="flex items-center gap-2"><CiTimer /> <strong>Duração:</strong> {duration}</p>
             <p className="flex items-center gap-2"><CiMoneyBill /><strong>Valor:</strong> {price}</p>
-            <p className="flex items-center gap-2"><PiGraduationCapThin /> <strong>Pré-requisitos:</strong>{require}</p>
+            <p className="flex flex-wrap items-center gap-2"><PiGraduationCapThin /> <strong>Pré-requisitos:</strong>{require}</p>
             <p className="items-center gap-2 flex"><PiCertificateThin /> <strong>Certificado:</strong>{certificate}</p>
             {parcelamento && <div className="flex flex-col">
             <p className="md:items-center flex gap-2"><FiAlertCircle /><strong>Parcelamento:</strong> {parcelamento}</p>
@@ -63,8 +63,8 @@ function CardCursos({ title, duration, price, description, includes, require, ce
             </ul>
           </div>
 
-          <Image src='/1.jpg' width={100} height={100} quality={95} loading="lazy" alt="Foto modelo maquiagem"
-            className="rounded md:w-[100px] object-cover grow hidden shadow-2xl md:block" />
+          <Image src={img} width={100} height={100} quality={95} loading="lazy" alt="Foto modelo maquiagem"
+            className="hidden md:w-[250px] rounded object-cover shadow-2xl md:block" />
 
         </div>
       </section>

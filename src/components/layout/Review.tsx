@@ -25,7 +25,7 @@ export default function Review() {
     {
       name: 'Amanda Vasques',
       text: 'Eu ameeeiii o seu trabalho😍😍❤️ Ansiosa para o próximo já',
-      insta: '@estelaborges'
+      insta: '@'
     }
   ]
 

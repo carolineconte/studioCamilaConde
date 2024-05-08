@@ -8,12 +8,18 @@ function Contact() {
 
   const [statusAbertura, setStatusAbertura] = useState('')
 
+
   useEffect(() => {
-    let agora = new Date().getHours();
+    let agora = new Date(); // Obtém a data e hora atual
+    let options = { timeZone: 'America/Campo_Grande' }
+
+    // Obtém as horas no fuso horário do MS
+    let horasMS = new Date(agora.toLocaleString('en-US', options)).getHours();
+    console.log(horasMS)
     let hrAbre = 8;
     let hrFecha = 18;
 
-    if (agora >= hrAbre && agora < hrFecha) {
+    if (horasMS >= hrAbre && horasMS < hrFecha) {
       setStatusAbertura('Aberto');
     } else {
       setStatusAbertura('Fechado');
@@ -22,7 +28,7 @@ function Contact() {
 
 
   return (
-    <address className="bg-primaryBlack text-primaryWhite mt-12 p-6 text-center text-xl font-light not-italic	">
+    <address className="bg-primaryBlack text-primaryWhite mt-12 -mb-12 p-6 text-center text-xl font-light not-italic	">
       <p className="font-bold">Localização:</p>
       <a href="https://maps.app.goo.gl/hY8bn8NL7DCRPCt28"
         className="border-b border-primaryWhite py-1 px-2 hover:bg-primaryWhite/20 hover:rounded"

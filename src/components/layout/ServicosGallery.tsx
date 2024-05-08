@@ -1,9 +1,9 @@
 'use client'
-import Image from "next/image";
 import SectionTitle from "../SectionTitle";
 import { useState } from "react";
 import { TiHeart } from "react-icons/ti";
 import CardServicos from '@/components/CardServicos'
+import Infos from "../Infos";
 
 type Servico = {
   title: string;
@@ -15,33 +15,29 @@ function ServicosGallery() {
 
   const servicosMaquiagemPenteado = [
     {
-      title: 'Maquiagem Básica',
-      price: '50,00'
-    },
-    {
-      title: 'Maquiagem Deluxe',
-      price: '70,00'
-    },
-    {
-      title: 'Maquiagem de Debutante',
-      price: '80,00'
-    },
-    {
-      title: 'Penteado Simples',
-      price: '40,00'
-    },
-    {
-      title: 'Penteado Elaborado',
-      price: '60,00'
-    },
-    {
-      title: 'Pacote Básico (Maquiagem Básica + Penteado Simples)',
-      price: '80,00'
-    },
-    {
-      title: 'Pacote Deluxe (Maquiagem Deluxe + Penteado Elaborado)',
+      title: 'Maquiagem',
       price: '120,00'
     },
+    {
+      title: 'Maquiagem resistente',
+      price: '140,00'
+    },
+    {
+      title: 'Pacote - Make resistente + Babyliss',
+      price: '190,00'
+    },
+    {
+      title: 'Pacote - Make resistente + Semi preso',
+      price: '250,00'
+    },
+    {
+      title: 'Pacote - Make resistente + Penteado',
+      price: '280,00'
+    },
+    {
+      title: 'Para lavar cabelo no studio',
+      price: '30,00'
+    }
   ];
 
   const servicosCabelos = [
@@ -152,6 +148,15 @@ function ServicosGallery() {
       price: '1000,00'
     },
   ];
+
+  const infosList = [
+    'Todos os pacotes podem ser personalizados com seu gosto pessoal.',
+    'Para fechamento do pacote e reservar data mediante pagamento de 30% do valor do pacote, restante pode ser pago ate data do casamento.',
+    'Em caso de cancelamento o adiantamento de reserva não será devolvido.',
+    'Será possível alterar a data somente com até 30 dias de antecedência.',
+    'Robe dos pacotes é emprestado para o dia da noiva.',
+  ];
+
   const [exibir, setExibir] = useState<Servico[]>(servicosMaquiagemPenteado);
 
 
@@ -164,7 +169,7 @@ function ServicosGallery() {
         <CardServicos setExibir={setExibir} src={'/noiva.jpg'} setar={servicosNoiva} text={'Noivas'} />
       </div>
 
-      <div id="valores" className="w-full mt-12">
+      <div id="valores" className="w-full mt-12 lg:mb-12">
         <SectionTitle sectionTitle="Valores" />
         <h2 className="text-sm font-thin block text-center my-1">(Clique na imagem para ver os valores relacionados)</h2>
         <div className="py-6 md:px-10 px-2 text-lg">
@@ -185,16 +190,8 @@ function ServicosGallery() {
                   ))
                 }
               </div>
-              <div className="w-full mt-10">
-                <p className="font-bold">Informações importantes</p>
-                <ul className="list-disc	">
-                  <li>Todos os pacotes podem ser personalizados com seu gosto pessoal.</li>
-                  <li>Para fechamento do pacote e reservar data mediante pagamento de 30% do valor do pacote, restante pode ser pago ate data do casamento.</li>
-                  <li>Em caso de cancelamento o adiantamento de reserva não será devolvido.</li>
-                  <li>Podendo alterar data até 30 dias antes.</li>
-                  <li>Robe dos pacotes é emprestado para o dia da noiva.</li>
-                </ul>
-              </div>
+              <Infos infosList={infosList} />
+           
             </>
           ) : (
             <table className="w-full">
