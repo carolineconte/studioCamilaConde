@@ -1,25 +1,20 @@
 import dynamic from 'next/dynamic'
-
-
+//Icons
+import { PiStarFill } from "react-icons/pi";
+import { FaHeart, FaPlay } from "react-icons/fa";
+import { TbColorSwatch } from "react-icons/tb";
 import MakeupIcon from "@/components/icons/MakeupIcon"
 import ClockIcon from "@/components/icons/ClockIcon";
 import DressIcon from "@/components/icons/DressIcon";
 import PhotoIcon from "@/components/icons/PhotoIcon";
 import HairIcon from "@/components/icons/HairIcon";
 import VideoIcon from "@/components/icons/VideoIcon";
-
-import { PiStarFill } from "react-icons/pi";
-import { FaHeart, FaPlay } from "react-icons/fa";
-import { TbColorSwatch } from "react-icons/tb";
-
+//Components
 const Infos = dynamic(() => import("@/components/Infos"))
 const Gallery = dynamic(() => import("@/components/layout/Gallery"))
 const SectionTitle = dynamic(() => import("@/components/SectionTitle"))
 const Cta = dynamic(() => import("@/components/layout/Cta"))
-// import Infos from "@/components/Infos";
-// import Gallery from "@/components/layout/Gallery";
-// import SectionTitle from "@/components/SectionTitle";
-// import Cta from "@/components/layout/Cta";
+
 
 export default function MakeFoto() {
 
@@ -35,14 +30,13 @@ export default function MakeFoto() {
 
       <SectionTitle sectionTitle='Make & Foto' />
 
-      <p className="py-6 text-pretty text-center font-['Tenor_Sans'] text-lg leading-5 mx-auto
-      lg:text-xl lg:px-10">
-        <strong className="block mb-1">Make e Foto oferece um pacote completo que inclui serviços de beleza para um ensaio fotográfico sob medida.</strong>
+      <p className="pt-6 text-pretty text-center font-['Tenor_Sans'] text-lg mx-auto lg:text-xl lg:px-10"><strong>Make e Foto oferece um pacote completo que inclui serviços de beleza para um ensaio fotográfico sob medida.</strong></p>
+      <p className="pb-6 text-pretty text-center font-['Tenor_Sans'] text-lg leading-5 mx-auto lg:text-xl lg:px-10">
         Este ensaio pode ser adaptado para diversas finalidades, como realinhamento de imagem nas redes sociais, celebração de
         aniversários, necessidades corporativas ou até mesmo para explorar a sensualidade, tudo isso visando elevar a autoestima.
       </p>
 
-      <Gallery img1={'/9.png'} img2={'/5.jpg'} img3={'/4.jpg'} img4={'/10.png'} img5={'/11.png'}/>
+      <Gallery img1={'/9.png'} img2={'/5.jpg'} img3={'/4.jpg'} img4={'/10.png'} img5={'/11.png'} />
 
       <section className="my-10 flex flex-col gap-3">
         <h2 className="subtitlePage">Como Funciona?</h2>

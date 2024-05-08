@@ -13,7 +13,7 @@ function Navbar() {
     <header className="z-40 fixed bg-primaryBlack w-full left-0 right-0">
       <div className='flex justify-between items-center py-2 px-10 md:hidden'>
         <Link href="/"><Image className="w-16" src='/logo.svg' width={50} quality={90} height={50} alt="logo studio" /></Link>
-        <button className="text-white text-lg" name="Botao para abrir menu"
+        <button aria-label="Abrir menu" className="text-white text-lg" name="Botao para abrir menu"
           onClick={() => setMobileNavOpen(!mobileNavOpen)}><MenuIcon className={'w-6 h-6 text-white '} />
         </button>
       </div>

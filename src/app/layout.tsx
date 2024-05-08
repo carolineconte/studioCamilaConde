@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import { Inter as FontSans } from "next/font/google"
 import "./globals.css";
 import { cn } from "@/lib/utils"
@@ -9,13 +8,6 @@ import InstaBtn from "@/components/InstaBtn"
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-
-const montserrat = Montserrat({
-  weight: ['100', '200', '300', '400', '600', '700'],
-  style: ['normal'],
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 const fontSans = FontSans({
   subsets: ["latin"],

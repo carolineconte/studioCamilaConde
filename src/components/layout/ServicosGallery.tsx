@@ -43,31 +43,23 @@ function ServicosGallery() {
   const servicosCabelos = [
     {
       title: 'Escova',
-      price: '50,00'
-    },
-    {
-      title: 'Cachos',
-      price: '70,00'
-    },
-    {
-      title: 'Corte Feminino',
-      price: '80,00'
-    },
-    {
-      title: 'Coloração',
-      price: '40,00'
-    },
-    {
-      title: 'Mechas',
       price: '60,00'
     },
     {
-      title: 'Detox cachos',
-      price: '80,00'
+      title: 'Corte',
+      price: '70,00'
     },
     {
-      title: 'Hidratação',
-      price: '120,00'
+      title: 'Tratamento',
+      price: '70,00'
+    },
+    {
+      title: 'Mecha',
+      price: '450,00'
+    },
+    {
+      title: 'Morena Iluminada',
+      price: '410,00'
     },
   ];
 
@@ -163,10 +155,10 @@ function ServicosGallery() {
   return (
     <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 h-full">
-        <CardServicos setExibir={setExibir} src={'/maquiagem.jpg'} setar={servicosMaquiagemPenteado} text={'Maquiagem & Penteados'} />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 h-[40vh]">
+        <CardServicos setExibir={setExibir} src={'/13.png'} setar={servicosMaquiagemPenteado} text={'Maquiagem & Penteados'} />
         <CardServicos setExibir={setExibir} src={'/cabelos.jpg'} setar={servicosCabelos} text={'Cabelos'} />
-        <CardServicos setExibir={setExibir} src={'/noiva.jpg'} setar={servicosNoiva} text={'Noivas'} />
+        <CardServicos setExibir={setExibir} src={'/12.png'} setar={servicosNoiva} text={'Noivas'} />
       </div>
 
       <div id="valores" className="w-full mt-12 lg:mb-12">

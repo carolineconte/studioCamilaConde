@@ -1,4 +1,5 @@
 'use client'
+//Components
 import CardCursos from "@/components/CardCursos";
 import Infos from "@/components/Infos";
 import SectionTitle from "@/components/SectionTitle";

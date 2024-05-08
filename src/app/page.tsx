@@ -1,12 +1,13 @@
 'use client'
+//Hooks
 import dynamic from 'next/dynamic'
 import { useState, useEffect } from "react";
-
+//Components
 const About = dynamic(() => import("@/components/layout/About"))
 const Review = dynamic(() => import("@/components/layout/Review"))
-import Carrossel from "@/components/layout/Carrossel";
-import Hero from "@/components/layout/Hero";
-import Logo from "@/components/layout/Logo";
+const Hero = dynamic(() => import("@/components/layout/Hero"))
+const Carrossel = dynamic(() => import("@/components/layout/Carrossel"))
+const Logo = dynamic(() => import("@/components/layout/Logo"))
 import Contact from '@/components/layout/Contact';
 
 export default function Home() {
