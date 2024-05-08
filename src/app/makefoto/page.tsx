@@ -36,7 +36,7 @@ export default function MakeFoto() {
         aniversários, necessidades corporativas ou até mesmo para explorar a sensualidade, tudo isso visando elevar a autoestima.
       </p>
 
-      <Gallery img1={'/9.png'} img2={'/5.jpg'} img3={'/4.jpg'} img4={'/10.png'} img5={'/11.pNg'} img6={'/6.jpg'} />
+      <Gallery img1={'/9.png'} img2={'/5.jpg'} img3={'/4.jpg'} img4={'/10.png'} img5={'/11.png'}/>
 
       <section className="my-10 flex flex-col gap-3">
         <h2 className="subtitlePage">Como Funciona?</h2>

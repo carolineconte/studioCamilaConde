@@ -6,7 +6,6 @@ interface Props {
   img3: string;
   img4: string;
   img5: string;
-  img6?: string;
   text1?: string;
   text2?: string;
   text3?: string;
@@ -14,7 +13,7 @@ interface Props {
   text5?: string;
 }
 
-export default function Gallery({ img1, text1, img2, text2, img3, text3, img4, text4, img5, img6, text5 }: Props) {
+export default function Gallery({ img1, text1, img2, text2, img3, text3, img4, text4, img5, text5 }: Props) {
   return (
     <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-24">
       <div className="grid grid-cols-2 md:h-[55vh] sm:grid-cols-2 md:grid-cols-5 gap-4">

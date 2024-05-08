@@ -4,10 +4,8 @@ import { useState, useEffect } from "react";
 
 const About = dynamic(() => import("@/components/layout/About"))
 const Review = dynamic(() => import("@/components/layout/Review"))
-// import About from "@/components/layout/About";
 import Carrossel from "@/components/layout/Carrossel";
 import Hero from "@/components/layout/Hero";
-// import Review from "@/components/layout/Review";
 import Logo from "@/components/layout/Logo";
 import Contact from '@/components/layout/Contact';
 
