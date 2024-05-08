@@ -37,7 +37,7 @@ export default function About() {
           <p>
             <strong>
               Combinando minha experiência em maquiagem, cabelo e fotografia, ofereço uma abordagem personalizada
-              a cada cliente. Meu compromisso é proporcionar uma experiência excepcional,
+              a cada cliente no meu espaço <strong>Studio Camila Conde</strong>. Meu compromisso é proporcionar uma experiência excepcional,
               onde cada detalhe é cuidadosamente planejado e executado para superar as expectativas.
             </strong>
           </p>
